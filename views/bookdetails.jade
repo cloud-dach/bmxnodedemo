@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 #{doc.title}
+  // a(href='/e?id=#{doc.id}') zum editieren klicken
+  h3 Authors:
+  p !{doc.authors}
+  h3 Pages:
+  p !{doc.pages}
+

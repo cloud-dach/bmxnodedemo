@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 #{title}
+  
+  p A simple List of Rene Meyers books. 
+  for book in list
+    li
+      a(href='/p?id=#{book.id}') !{book.title}
+      
